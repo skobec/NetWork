@@ -28,7 +28,7 @@ $RECYCLE.BIN/
 .idea/sqlDataSources.xml
 .idea/dynamic.xml
 .idea/uiDesigner.xml
-
+node_modules/
 # Gradle:
 .idea/gradle.xml
 .idea/libraries
