@@ -1,12 +1,26 @@
-.kurs_and_news_bl:after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 100%;
-  background-color: #888888;
-  left: 0;
-  /* top: 0; */
-  margin-top: -1px;
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,500);
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+* {
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+p,
+a,
+span,
+button {
+  font-weight: 400;
+  outline: none!important;
+}
+body {
+  font-family: 'Roboto', sans-serif;
 }
 /* Template-specific stuff
  *
@@ -16,7 +30,6 @@
 /* Account for fixed navbar */
 body {
   padding-top: 70px;
-  padding-bottom: 30px;
 }
 body,
 .navbar-fixed-top,
@@ -223,4 +236,237 @@ body,
 }
 .form-inline .has-feedback .form-control-feedback {
   top: 0;
+}
+.kurs_and_news_bl:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #e5e5e5;
+  left: 0;
+  /* top: 0; */
+  margin-top: -1px;
+}
+.courses_bl_list {
+  border-right: 1px solid;
+  border-color: #e5e5e5;
+  padding: 0;
+}
+.courses_bl_list:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #e5e5e5;
+  left: 0;
+  /* top: 0; */
+  margin-top: -1px;
+}
+.title_opis {
+  font-size: 30px;
+  color: #117289;
+}
+.title_name_courses {
+  color: #678fbf;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.info_name_courses {
+  color: #117289;
+  font-size: 22px;
+  line-height: 25px;
+  margin: 10px 0 33px;
+}
+.nearest_courses {
+  font-size: 15px;
+  color: #dfdfdf;
+  display: block;
+}
+.nearest_courses_date {
+  font-size: 15px;
+  color: #117289;
+  display: block;
+}
+.btn_rec_courses {
+  background-color: transparent;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  font-weight: 100;
+  border: 1px solid #dfdfdf;
+  color: #dfdfdf;
+  font-size: 16px;
+  padding: 8px 20px;
+}
+.kurs_bl {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 35px;
+  padding-top: 35px;
+}
+.kurs_bl:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: -100%;
+  bottom: -1px;
+  background-color: #e5e5e5;
+}
+.kurs_bl:last-child {
+  border-bottom: 1px solid transparent;
+}
+.kurs_bl:last-child:after {
+  background-color: transparent;
+}
+.blogs_bl_list {
+  padding-right: 0;
+  border-left: 1px solid #e5e5e5;
+  margin-left: -1px;
+}
+.blogs_bl {
+  padding-bottom: 35px;
+  padding-top: 35px;
+}
+.blogs_bl .title_name_courses {
+  font-weight: 300;
+}
+.blogs_bl .info_name_courses {
+  font-size: 12px;
+  color: #117289;
+  line-height: 16px;
+  margin: 10px 0 15px;
+}
+.date_blogs {
+  font-size: 15px;
+  color: #1d4960;
+}
+.forums_blocks {
+  font-size: 25px;
+  font-weight: 300;
+  color: #cfcece;
+  margin: 25px 0 -5px;
+}
+.forums_blocks svg {
+  margin-bottom: -9px;
+  margin-right: 22px;
+}
+.forums_blocks svg rect {
+  fill: #cfcece;
+}
+.forums_blocks svg path {
+  fill: #cfcece;
+}
+.forums_blocks svg line {
+  stroke: #cfcece;
+}
+.forums_blocks.blog_academ svg {
+  margin-top: 5px;
+  margin-bottom: -14px;
+}
+.link_pod_kurs {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e4e4e4;
+  position: relative;
+}
+.link_pod_kurs:before {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  background: url("../img/shadow_bottom.png") no-repeat left;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 895px;
+  height: 11px;
+  background-size: 100% 84%;
+}
+.link_pod_kurs .forums_blocks {
+  display: block;
+  margin: 10px 0 18px;
+  color: #678fbf;
+}
+.link_pod_kurs .forums_blocks .blog_academ svg {
+  margin-bottom: -10px;
+}
+.link_pod_kurs .forums_blocks rect {
+  fill: #678fbf;
+}
+.link_pod_kurs .forums_blocks path {
+  fill: #678fbf;
+}
+.link_pod_kurs .forums_blocks line {
+  stroke: #678fbf;
+}
+.step_courses {
+  margin-bottom: 55px;
+}
+.step_courses hr {
+  width: 89.3%;
+  float: right;
+  margin: 40px 30px 0;
+}
+.step_courses_list {
+  margin: 40px 0 20px;
+}
+.step_courses_img_bl {
+  width: 30%;
+  text-align: right;
+}
+.step_courses_txt_bl {
+  width: 70%;
+}
+.step_courses_title {
+  font-size: 35px;
+  color: #00bae6;
+  margin-bottom: 15px;
+}
+.step_courses_text {
+  font-size: 20px;
+  color: #117289;
+}
+.step_courses_comment {
+  font-size: 12px;
+  color: #3e5b62;
+}
+.step_courses_bl_txt {
+  padding-left: 60px;
+}
+.trainin_bl {
+  height: 590px;
+  width: 100%;
+}
+.trainin_bl_left {
+  width: 50%;
+  background-color: #3dbfe5;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  border-right: 1px solid #fff;
+}
+.trainin_bl_right {
+  width: 50%;
+  background-color: #fa6b3a;
+  height: 100%;
+  display: inline-block;
+  float: left;
+}
+.footer {
+  min-height: 25px;
+}
+.footer_blue_left {
+  background-color: #3dbfe5;
+  height: 25px;
+}
+.footer_orange_right {
+  background-color: #fa6b3a;
+  border-left: 1px solid #ffffff;
+  height: 25px;
+}
+.footer_orange_right p {
+  margin: 0;
+  color: #f3fafc;
+  font-size: 10px;
+  text-transform: uppercase;
+  line-height: 25px;
 }
