@@ -27,10 +27,6 @@ body {
  * Customizations just for the template; these are not necessary for anything
  * with disabling the responsiveness.
  */
-/* Account for fixed navbar */
-body {
-  padding-top: 70px;
-}
 body,
 .navbar-fixed-top,
 .navbar-fixed-bottom {
@@ -237,6 +233,9 @@ body,
 .form-inline .has-feedback .form-control-feedback {
   top: 0;
 }
+.header {
+  padding: 9px 0 3px;
+}
 .kurs_and_news_bl:after {
   content: "";
   position: absolute;
@@ -246,6 +245,76 @@ body,
   left: 0;
   /* top: 0; */
   margin-top: -1px;
+}
+.link_header {
+  display: inline-block;
+}
+.link_header li {
+  display: inline-block;
+}
+.link_header li a {
+  text-decoration: none;
+  text-align: center;
+  margin: 0 8px 0 0;
+  float: left;
+}
+.link_header li a span {
+  display: block;
+}
+.link_header_ico {
+  margin-bottom: 5px;
+}
+.link_header_txt {
+  color: #678fbf;
+  font-size: 17px;
+  border-bottom: 2px solid #e7e7e7;
+}
+.logo {
+  margin-top: 10px;
+  display: inline-block;
+}
+.links_header {
+  width: 210px;
+}
+.links_header li {
+  margin-top: 10px;
+}
+.call_and_prof_name {
+  display: inline-block;
+  float: right;
+}
+.prof_link {
+  float: right;
+  margin-top: 25px;
+}
+.prof_link_ico {
+  float: left;
+  display: inline-block;
+  margin-top: 7px;
+  margin-right: 13px;
+  position: relative;
+}
+.prof_link_ico:after {
+  content: "";
+  background: url("../img/!.svg") no-repeat;
+  position: absolute;
+  top: -15px;
+  left: 1px;
+  height: 20px;
+  width: 20px;
+}
+.prof_link_name {
+  display: inline-block;
+  float: left;
+  font-size: 16px;
+  color: #678fbf;
+  line-height: 20px;
+}
+.call_btn {
+  border: none;
+  background-color: transparent;
+  margin-top: 16px;
+  margin-right: 30px;
 }
 .courses_bl_list {
   border-right: 1px solid;
@@ -265,6 +334,7 @@ body,
 .title_opis {
   font-size: 30px;
   color: #117289;
+  margin: 25px 0;
 }
 .title_name_courses {
   color: #678fbf;
@@ -435,6 +505,19 @@ body,
 .trainin_bl {
   height: 590px;
   width: 100%;
+  position: relative;
+}
+.trainin_bl:after {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  background: url("../img/shadow_bottom.png") no-repeat left;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 895px;
+  height: 11px;
+  background-size: 100% 84%;
 }
 .trainin_bl_left {
   width: 50%;
@@ -443,6 +526,17 @@ body,
   display: inline-block;
   float: left;
   border-right: 1px solid #fff;
+  position: relative;
+}
+.trainin_bl_left .trainin_link {
+  right: 248px;
+  top: 37%;
+}
+.trainin_bl_left .trainin_link:hover .trainin_link_ico {
+  border-color: #fa6b3a;
+}
+.trainin_bl_left img {
+  float: right;
 }
 .trainin_bl_right {
   width: 50%;
@@ -450,6 +544,56 @@ body,
   height: 100%;
   display: inline-block;
   float: left;
+  position: relative;
+}
+.trainin_bl_right .trainin_link {
+  left: 223px;
+  top: 37%;
+}
+.trainin_bl_right .trainin_link:hover .trainin_link_ico {
+  border-color: #3dbfe5;
+}
+.trainin_bl_right img {
+  float: left;
+  margin-left: -1px;
+}
+.trainin_link {
+  position: absolute;
+  text-align: center;
+  text-decoration: none!important;
+}
+.trainin_link:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.trainin_link_ico {
+  height: 140px;
+  width: 140px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  border: 5px solid transparent;
+}
+.trainin_link_ico img {
+  width: 100%;
+}
+.trainin_link_txt {
+  font-size: 22px;
+  color: #ffffff;
+  display: block;
+  margin-top: 8px;
 }
 .footer {
   min-height: 25px;
