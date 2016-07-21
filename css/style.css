@@ -304,7 +304,8 @@ body,
   display: inline-block;
 }
 .links_header {
-  width: 210px;
+  width: 190px;
+  padding-left: 15px;
 }
 .links_header li {
   margin-top: 10px;
@@ -320,8 +321,9 @@ body,
 }
 .call_and_prof_name {
   display: inline-block;
-  float: right;
-  width: 207px;
+}
+.prof_link_name_bl {
+  display: inline-block;
 }
 .prof_link_name_bl .prof_link_option_bl {
   position: absolute;
@@ -345,7 +347,7 @@ body,
   -ms-transition: linear 0.2s;
   -o-transition: linear 0.2s;
   transition: linear 0.2s;
-  right: -103px;
+  right: -124px;
   bottom: -104px;
   text-align: left;
 }
@@ -395,16 +397,15 @@ body,
 .prof_link_name_bl:hover .prof_link_option_bl {
   visibility: visible;
   opacity: 1;
-  bottom: -119px;
+  bottom: -125px;
 }
 .prof_link {
-  float: right;
+  float: left;
   margin-top: 14px;
-  width: 70%;
+  width: 130px;
   text-align: center;
   margin-left: -1px;
   /* left: 4px; */
-  margin-right: -10px;
   position: relative;
   white-space: nowrap;
   overflow: hidden;
@@ -566,8 +567,8 @@ body,
   padding: 0 5px;
 }
 .phone_bl {
-  float: left;
   margin-top: 16px;
+  display: inline-block;
 }
 .phone_bl:hover .call_btn svg .circle_phone {
   fill: #00b9e9;
@@ -725,6 +726,11 @@ body,
 .blogs_bl {
   padding-bottom: 35px;
   padding-top: 35px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 .blogs_bl .title_name_courses {
   font-weight: 300;
@@ -734,6 +740,9 @@ body,
   color: #117289;
   line-height: 16px;
   margin: 10px 0 15px;
+}
+.blogs_bl.affix {
+  top: 100px;
 }
 .date_blogs {
   font-size: 15px;
